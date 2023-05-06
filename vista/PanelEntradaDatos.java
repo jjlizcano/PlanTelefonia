@@ -14,7 +14,9 @@ public class PanelEntradaDatos extends JPanel
     private JComboBox cbOperadores;
     private JLabel lbOperadores;
     private JLabel lbNumeroCelular;
+    private JLabel lbCantidadMinutos;
     private JTextField tfNumeroCelular;
+    private JTextField tfCantidadMinutos;
 
 
     // Métodos
@@ -44,10 +46,19 @@ public class PanelEntradaDatos extends JPanel
         lbNumeroCelular.setBounds(0,60,180,20);
         this.add(lbNumeroCelular);
 
+        //Crear y agregar etiqueta CantidadMinutos
+        lbCantidadMinutos = new JLabel("Cantidad de minutos: ", JLabel.RIGHT);
+        lbCantidadMinutos.setBounds(0,90,180,20);
+        this.add(lbCantidadMinutos);
+
         // Crear y agregar campos de texto
         tfNumeroCelular = new JTextField("");
         tfNumeroCelular.setBounds(190, 60, 80, 20);
         add(tfNumeroCelular);
+
+        tfCantidadMinutos = new JTextField("");
+        tfCantidadMinutos.setBounds(190, 90, 40, 20);
+        add(tfCantidadMinutos);
 
         //Borde y titulo del panel
         TitledBorder borde = BorderFactory.createTitledBorder("Datos de Entrada");
@@ -59,5 +70,15 @@ public class PanelEntradaDatos extends JPanel
     public String getOperador()
     {
         return (String) cbOperadores.getSelectedItem();
+    }
+
+    public String getNumero()
+    {
+        return tfNumeroCelular.getText();
+    }
+
+    public String getMinutos()
+    {
+        return tfCantidadMinutos.getText();
     }
 }

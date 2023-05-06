@@ -7,8 +7,8 @@ public class PlanTelefonia
     private int numeroCelular;
     private String operador;
     private int cantidadMinutos;
-    private double valorMinuto;
-    private double costoPlan;
+    private int valorMinuto;
+    private int costoPlan;
 
     // Metodos
 
@@ -39,7 +39,7 @@ public class PlanTelefonia
         this.cantidadMinutos = cantidadMinutos;
     }
     
-    public void setCostoPlan(double costoPlan)
+    public void setCostoPlan(int costoPlan)
     {
         this.costoPlan = costoPlan;
     }
@@ -63,16 +63,17 @@ public class PlanTelefonia
 
     public double getCostoPlan() 
     {
+        calcularCostoPlan();
         return costoPlan;
     }
 
 
-    public double calcularCostoPlan()
+    public int calcularCostoPlan()
     {
         valorMinuto = 250;
         costoPlan = cantidadMinutos * valorMinuto;
 
-        if(operador == "Wom")
+        if(operador.equals("Wom"))
         {
             costoPlan *= 0.5;
         }

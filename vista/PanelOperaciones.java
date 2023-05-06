@@ -24,13 +24,13 @@ public class PanelOperaciones extends JPanel
 
         //Crear y agregar boton CalcularPlan
         btCalcularPlan = new JButton("Calcular Plan");
-        btCalcularPlan.setBounds(10,20,170,20);
+        btCalcularPlan.setBounds(10,30,170,20);
         btCalcularPlan.setActionCommand("calcularPlan");
         this.add(btCalcularPlan);
 
         //Crear y agregar boton Salir
         btSalir = new JButton("Salir");
-        btSalir.setBounds(190,50,170,20); 
+        btSalir.setBounds(10,60,170,20); 
         btSalir.setActionCommand("salir");
         this.add(btSalir);
 
