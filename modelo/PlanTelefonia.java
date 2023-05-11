@@ -4,7 +4,7 @@ public class PlanTelefonia
 {
     // Atributos
 
-    private int numeroCelular;
+    private String numeroCelular;
     private String operador;
     private int cantidadMinutos;
     private int valorMinuto;
@@ -17,14 +17,14 @@ public class PlanTelefonia
 
     }
 
-    public PlanTelefonia(int pNumeroCelular, String pOperador, int pCantidadMinutos)
+    public PlanTelefonia(String pNumeroCelular, String pOperador, int pCantidadMinutos)
     {
         this.numeroCelular = pNumeroCelular;
         this.operador = pOperador;
         this.cantidadMinutos = pCantidadMinutos;
     }
 
-    public void setNumeroCelular(int numeroCelular)
+    public void setNumeroCelular(String numeroCelular)
     {
         this.numeroCelular = numeroCelular;
     }
@@ -46,7 +46,7 @@ public class PlanTelefonia
 
 
 
-    public int getNumeroCelular() 
+    public String getNumeroCelular() 
     {
         return numeroCelular;
     }

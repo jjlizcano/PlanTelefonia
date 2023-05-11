@@ -32,7 +32,7 @@ public class Controlador implements ActionListener
         if(comando.equals("calcularPlan"))
         {
             String operador = venPrin.miPanelEntradaDatos.getOperador();
-            int numero = Integer.parseInt(venPrin.miPanelEntradaDatos.getNumero());
+            String numero = venPrin.miPanelEntradaDatos.getNumero();
             int minutos = Integer.parseInt(venPrin.miPanelEntradaDatos.getMinutos());
 
             plan = new PlanTelefonia(numero, operador, minutos);

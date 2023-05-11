@@ -33,7 +33,7 @@ public class VentanaPrincipal extends JFrame
         this.add(miPanelResultados);
 
         //Caracteristicas de la ventana
-        this.setTitle("Plan de telefonía");
+        this.setTitle("Julian Javier Lizcano Villarreal");
         this.setSize(800,405);
         this.setLocationRelativeTo(null);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
